@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody body = RequestBody.create(jsonBody.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization", "Bearer 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")
+                .header("Authorization", "Bearer //place api key here")
                 .post(body)
                 .build();
         client.newCall(request).enqueue(new Callback() {
